@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="admin-style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+<header class="header">
+    <a href="index.html" class="logo">DreamVoyage Admin</a>
+    <nav class="navbar">
+        <a href="admin_tours.html">Управління турами</a>
+        <a href="admin_clients.html">Клієнти</a>
+        <a href="admin_orders.html">Замовлення</a>
+        <a href="index.html">Вийти</a>
+    </nav>
+</header>
+
+<section class="admin-section">
+    <h1>Управління турами</h1>
+    <form id="addTourForm">
+        <input type="text" placeholder="Назва туру" required>
+        <input type="text" placeholder="Опис туру" required>
+        <input type="text" placeholder="Зображення (URL)" required>
+        <button type="submit">Додати тур</button>
+    </form>
+
+    <table>
+        <thead>
+        <tr>
+            <th>Назва</th>
+            <th>Опис</th>
+            <th>Зображення</th>
+            <th>Дії</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Париж</td>
+            <td>Романтична подорож</td>
+            <td><img src="Paris.jpg" alt="Paris" width="50"></td>
+            <td><button class="delete">Видалити</button></td>
+        </tr>
+        </tbody>
+    </table>
+</section>
+
+<section class="admin-section">
+    <h1>Клієнти</h1>
+    <table>
+        <thead>
+        <tr>
+            <th>Ім'я</th>
+            <th>Email</th>
+            <th>Телефон</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Денис</td>
+            <td>denis@gmail.com</td>
+            <td>+380123456789</td>
+        </tr>
+        </tbody>
+    </table>
+</section>
+
+<section class="admin-section">
+    <h1>Замовлення</h1>
+    <table>
+        <thead>
+        <tr>
+            <th>Клієнт</th>
+            <th>Тур</th>
+            <th>Статус</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Денис</td>
+            <td>Париж</td>
+            <td>Оплачено</td>
+        </tr>
+        </tbody>
+    </table>
+</section>
+
+<footer class="footer">
+    <p>&copy; 2025 DreamVoyage Admin Panel</p>
+</footer>
+
+</body>
+</html>
